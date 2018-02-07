@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ApiLabDbConnection-Web.config Connection String" description="ApiLabDbConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=newlinx-api.database.windows.net;Initial Catalog=ApiLabDB;User ID=sqladmin;Password=alumni_1204" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\multi\\Source\\Repos\\ApiLab\\code\\OneDriveBot\\OneDriveBot\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ApiLabDbConnection']/@connectionString" />
+  </parameter>
+</parameters>

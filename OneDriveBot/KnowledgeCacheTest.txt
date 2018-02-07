@@ -1,0 +1,66 @@
+﻿[I]help
+Hello! This is OneDrive Bot. Microsoft OneDrive developers will be very glad if I can help you. Here are a list of ideas about how I can help you:
+* Ask a question about `OneDrive`.
+* Check latest news about OneDrive by sending `news`.
+* Create a ticket by saying `create ticket`.
+* Check your recent ticket by sending `ticket #{yourticket number}`
+* Learn about OneDrive iOS app by sending `How to`.
+[I]install OneDrive
+Depends on what device you want to access `OneDrive`, you can select the following links to download
+- For iPhone or iPad, [download OneDrive for iOS app from iTune Store](https://itunes.apple.com/us/app/skydrive/id477537958?ls=1&mt=8 "OneDrive for iOS")
+- For Amazon Kindle devices, [download OneDrive app from Amazon App Store](https://www.amazon.com/dp/B00IEG0JOY/ "OneDrive Android app").
+- For other Android phone or tablets, [download OneDrive app from Google Play store](https://play.google.com/store/apps/details?id=com.microsoft.skydrive&hl=en-us "OneDrive Android app").
+- For Windows 10 devices (PC, phone, tablet, HoloLens, or Surface Hub), OneDrive app is already included in your device.
+[I]camera roll upload on iOS device
+1. In the `OneDrive` app, tap the Me icon  at the bottom of the screen, then tap **Settings**.
+
+![CameraUploadSettings](http://onedrivebot-xw.azurewebsites.net/knowledgeContent/images/iOS_CameraUploadSettings1.png)
+
+2. In the Settings box, tap **Camera Upload**, then turn on Camera Upload to automatically upload photos and videos to OneDrive.
+
+Note: To set your device to upload pictures even when the OneDrive app isn't the active app, tap **Upload in Background**.
+
+3. To make sure videos automatically upload, turn on **Include Videos**.
+
+Notes: 
+- All photos and videos will upload at their original sizes when you're on a Wi‑Fi network. If you want to use your mobile network, tap the three horizontal bars in the upper-left corner, tap **Settings**, tap **Camera upload**, and then turn on **Use Mobile Network**.
+- After photos and videos finish uploading, you can delete them from your device, and the copies in `OneDrive` won't be affected.
+
+![CameraUploadSettings](http://onedrivebot-xw.azurewebsites.net/knowledgeContent/images/iOS_CameraUploadSettings3.png)
+[I]news
+Nothinkg yet.
+We are busy working on the next new features. When they are ready, we will post them here.
+[I]OneDrive plans
+There are four levels of OneDrive plans. You can select one of the plans below to know more details.
+
+[M:OneDrive basic plan]OneDrive Basic (free) 
+[M:OneDrive 50G plan]OneDrive 50G Storage only ($1.99/mo) 
+[M:Office 365 personal plan]Office 365 Personal with Premium OneDrive Features ($6.99/mo)
+[M:Office 365 home plan]Office 365 Home with Premium OneDrive Features ($9.99/mo)
+[I]OneDrive basic plan
+- `OneDrive` Basic is a storage only plan with 5 GB storage space.
+- Access your `OneDrive` files with Microsoft advanced sync technology on PC or Mac.
+- Mobile access to your `OneDrive` files from your favoriate mobile devices.
+- Web access to your `OneDrive` files from a browser and enjoy a premium web-based experience with rich previews and editing in Office apps.
+- Photos: take photos for work, snap receipts or whiteboards, auto upload your photos from your device to `OneDrive` cloud, and available magically on all your devices.
+- Cost: free!
+[I]OneDrive 50G plan
+- Enjoy all features of `OneDrive` basic plan
+- 50GB data storage space in `OneDrive` cloud.
+- Cost: $1.99/month
+[I]Office 365 personal plan
+- Enjoy all features of `OneDrive` basic plan
+- 1 TB data storage space in `OneDrive` cloud.
+- Install Office (Word/Excel/PowerPoint/Outlook/OneNote) apps on 1 PC or 1 Mac
+- Install Office apps on 1 mobile phone and 1 tablet
+- Enhanced security on file sharing by giving access to others for a limited period of time.
+- Stay productive and access to folders/files when no internet connection
+- Stay organized and never lose an iimportant paper by scanning multiple doocs or pages into a single shareable PDF.
+- Cost: $6.99/month
+[I]Office 365 home plan
+- Allow 5 users access 5 TB total storage (1000 GB each)
+- Install Office apps on up to 5 PCs or Macs
+- Install Office apps on up to 5 tablets and 5 phones
+- Enjoy all features included in Office 365 personal plan
+- Cost: $9.99/month
+[I]test
