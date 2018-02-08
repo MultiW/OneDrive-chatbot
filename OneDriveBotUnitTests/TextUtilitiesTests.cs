@@ -1,6 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OneDriveBot.Services;
+using System.Text.RegularExpressions;
 
 namespace OneDriveBotUnitTests
 {
@@ -10,8 +10,17 @@ namespace OneDriveBotUnitTests
         [TestMethod]
         public void TestExtractEmail()
         {
-            Assert.AreEqual("multiw@outlook.com", TextUtilities.ExtractEmail(@"<a href=""mailto: multiw@outlook.com"">multiw@outlook.com</a>"));
-            Assert.AreEqual("multiw@outlook.com", TextUtilities.ExtractEmail("multiw@outlook.com"));
+            Assert.AreEqual("abcabc@outlook.com", TextUtilities.ExtractEmailFromHyperlink(@"<a href=""mailto: abcabc@outlook.com"">abcabc@outlook.com</a>"));
+            Assert.AreEqual("abcabc@outlook.com", TextUtilities.ExtractEmailFromHyperlink("abcabc@outlook.com"));
+        }
+
+        [TestMethod]
+        public void TestEmailRegexPattern()
+        {
+            Assert.AreEqual(true, Regex.IsMatch("abcabc@outlook.com", TextUtilities.EmailRegexString));
+
+            Match m = Regex.Match("abcabc@outlook.com", TextUtilities.EmailRegexString);
+            Assert.AreEqual(true, m.Success);
         }
     }
 }

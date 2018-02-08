@@ -1,19 +1,16 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace OneDriveBot
 {
     public class LuisClient
     {
         // Botstrap key
-        // private string baseUri = "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/b7f6cb7c-170a-43f6-b297-5208bfe2264d?subscription-key=0a1d71c4b1204f8aa2635884335c17de&verbose=true&timezoneOffset=-480&q=";
+        // private string baseUri = "";
         // OneDrive Bot key
-        private string baseUri = "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/b7f6cb7c-170a-43f6-b297-5208bfe2264d?subscription-key=49caed0be2924ca498f1f55476096636&timezoneOffset=-480&verbose=true&q=";
+        private string baseUri = "";
         public static LuisClient Default = new LuisClient(); 
 
         /// <summary>

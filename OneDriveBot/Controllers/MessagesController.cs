@@ -1,9 +1,12 @@
-﻿using System.Net;
+﻿using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Connector;
+using OneDriveBot.Services.Response;
+using System;
+using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.Bot.Connector;
 
 namespace OneDriveBot
 {
@@ -22,13 +25,13 @@ namespace OneDriveBot
             }
             else
             {
-                HandleSystemMessage(activity);
+                await HandleSystemMessage(activity);
             }
             var response = Request.CreateResponse(HttpStatusCode.OK);
             return response;
         }
 
-        private Activity HandleSystemMessage(Activity message)
+        private async Task<Activity> HandleSystemMessage(Activity message)
         {
             if (message.Type == ActivityTypes.DeleteUserData)
             {
@@ -45,6 +48,18 @@ namespace OneDriveBot
             {
                 // Handle add/remove from contact lists
                 // Activity.From + Activity.Action represent what happened
+                if (message.Action == "add")
+                {
+                    var reply = ActivityGenerator.Default.GenerateMenuOptions(message,
+                        new List<MenuOption>
+                        {
+                            new MenuOption() { DisplayValue = "What can you do?", ReturnValue = "What can you do?" }
+                        });
+                    reply.Text = @"Welcome! Ask me a question about OneDrive or learn about how I can help.";
+
+                    ConnectorClient connector = new ConnectorClient(new Uri(message.ServiceUrl));
+                    await connector.Conversations.ReplyToActivityAsync(reply);
+                }
             }
             else if (message.Type == ActivityTypes.Typing)
             {
